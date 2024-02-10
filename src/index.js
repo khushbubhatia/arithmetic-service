@@ -8,8 +8,11 @@ app.get('/', (req,res) => {
     res.send('Arithmetic service - Hello World!');
 });
 
-app.listen(port);
-
-app.get('/add/:n/:m', (req,res)=>{
-    res.json(Number(req.params.n) + Number (req.params.m));
+app.get('/add/:n/:m, (req, res) => {
+        const num1 = parseInt(req.params.n);
+        const num1 = parseInt(req.params.m);
+        const sum = num1+num2;
+        res.json(sum);
 });
+
+app.listen(port);
