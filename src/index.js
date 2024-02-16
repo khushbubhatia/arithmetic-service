@@ -8,10 +8,10 @@ app.get('/', (req,res) => {
     res.send('Arithmetic service - Hello World!');
 });
 
-app.get('/add/:n/:m, (req, res) => {
-        const num1 = parseInt(req.params.n);
-        const num1 = parseInt(req.params.m);
-        const sum = num1+num2;
+app.get('/add/:n/:m', (req, res) => {
+        const box1 = parseInt(req.params.n);
+        const box2 = parseInt(req.params.m);
+        const sum = box1+box2;
         res.json(sum);
 });
 
